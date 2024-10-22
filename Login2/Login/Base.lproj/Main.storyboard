@@ -136,7 +136,13 @@
                                         <buttonConfiguration key="configuration" style="plain" title="LOGIN">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poe-Ie-RiX"/>
                                             <segue destination="C17-5R-VLK" kind="show" id="peQ-Ft-hmt"/>
                                         </connections>
                                     </button>
@@ -158,6 +164,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign up here">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signUpHereAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FF-Vp-hYZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -184,6 +193,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bbk-1J-pwq"/>
+                    <connections>
+                        <outlet property="dontHaveAnAccountLabel" destination="ce1-Rj-2Gc" id="AE7-gS-PC2"/>
+                        <outlet property="emailLineView" destination="Yqz-jl-3vH" id="b8O-1G-5vt"/>
+                        <outlet property="emailTextField" destination="ATV-OA-kEJ" id="VRh-ej-VkE"/>
+                        <outlet property="envelopeImageView" destination="1Jj-OU-Hxw" id="ogR-2p-ZOl"/>
+                        <outlet property="lockImageView" destination="tjp-AY-dsk" id="n2o-FA-AIv"/>
+                        <outlet property="loginButton" destination="d1A-dg-yB7" id="Oxz-hA-khi"/>
+                        <outlet property="passwordLineView" destination="re7-wf-luf" id="uum-eO-Ke9"/>
+                        <outlet property="passwordTextField" destination="1hJ-gm-zXj" id="rDI-ye-OeL"/>
+                        <outlet property="signUpHereButton" destination="4aG-bz-c08" id="MyI-cK-MAn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,10 +234,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
